@@ -41,3 +41,8 @@ a {
     display: none;
   }
 }
+
+/* 카피, 다운로드 버튼 마진*/
+body > div.container.p-5 > div:nth-child(7) input {
+  margin: 15px;
+}

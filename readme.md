@@ -6,6 +6,16 @@
 
 [![데모](readmeRes/preview.jpg)](https://chinsun9.github.io/html-banner-maker/)
 
+## 기능
+
+- 캔버스 크기 조절
+- 실시간 캔버스 업데이트
+- 폰트 사이즈 조절
+- 폰트색 조절
+- 캔버스색 조절
+- 이미지로 다운로드
+- 클립보드로 카피
+
 ## Bootstrap
 
 ### Bootstrap css

@@ -80,6 +80,17 @@ function saveBanner() {
   saveAs(sel.toDataURL(), filename + text + '.png');
 }
 
+function copyBanner() {
+  console.log(`copyBanner`);
+
+  const canvas = document.querySelector('#myCanvas');
+
+  canvas.toBlob(function (blob) {
+    const item = new ClipboardItem({ 'image/png': blob });
+    navigator.clipboard.write([item]);
+  });
+}
+
 function saveAs(uri, filename) {
   var link = document.createElement('a');
   if (typeof link.download === 'string') {
