@@ -1,7 +1,6 @@
 # html-banner-maker
 
-- [Banner Maker](https://banner.godori.dev/)을 보고 만들었다.
-- 리액트로 만들기전에 html로
+- [Banner Maker](https://banner.godori.dev/)을 보고 만들어 보았습니다.
 
 ## [데모](html-banner-maker)
 
@@ -28,5 +27,4 @@
 npm install bootstrap-colorpicker
 ```
 
-- npm으로 다운받고,
 - `node_modules\bootstrap-colorpicker\dist` 경로에서 소스 코드 가져와 사용
