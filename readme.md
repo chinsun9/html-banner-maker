@@ -2,7 +2,7 @@
 
 - [Banner Maker](https://banner.godori.dev/)을 보고 만들어 보았습니다.
 
-## [데모](html-banner-maker)
+## [데모](https://chinsun9.github.io/html-banner-maker/)
 
 [![데모](readmeRes/preview.jpg)](https://chinsun9.github.io/html-banner-maker/)
 
