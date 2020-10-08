@@ -124,6 +124,11 @@ function initCanvas() {
   drawCanvas();
 }
 
+function randomBannerColor() {
+  initColor();
+  drawCanvas();
+}
+
 // 초기화
 initColor();
 initCanvas();
