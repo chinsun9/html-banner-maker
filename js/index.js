@@ -1,13 +1,31 @@
 function initColor() {
-  document.querySelector(
-    '#backgroundColorPicker > input'
-  ).value = randomColorGenerator();
+  const bgColor = randomColorGenerator();
+
+  document.querySelector('#backgroundColorPicker > input').value = bgColor;
+  document.querySelector('#fontColorPicker > input').value = getColorByBgColor(
+    bgColor
+  );
 }
 
 function randomColorGenerator() {
   var bg_colour = Math.floor(Math.random() * 16777215).toString(16);
   bg_colour = '#' + ('000000' + bg_colour).slice(-6);
   return bg_colour;
+}
+
+// https://stackoverflow.com/questions/3942878/how-to-decide-font-color-in-white-or-black-depending-on-background-color
+/**
+ * Get color (black/white) depending on bgColor so it would be clearly seen.
+ * @param bgColor
+ * @returns {string}
+ */
+function getColorByBgColor(bgColor) {
+  if (!bgColor) {
+    return '';
+  }
+  return parseInt(bgColor.replace('#', ''), 16) > 0xffffff / 2
+    ? '#000'
+    : '#fff';
 }
 
 function drawCanvas() {
