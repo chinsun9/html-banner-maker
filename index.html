@@ -85,13 +85,21 @@ Sample</textarea
             >
           </div>
 
-          <select class="custom-select" id="inputGroupSelect01">
+          <input
+            type="text"
+            name="fontsize"
+            class="form-control"
+            list="fontsizelist"
+            value="40"
+            id="inputGroupSelect01"
+          />
+          <datalist id="fontsizelist">
             <option value="20">20</option>
             <option value="30">30</option>
-            <option value="40" selected>40</option>
+            <option value="40">40</option>
             <option value="60">60</option>
             <option value="80">80</option>
-          </select>
+          </datalist>
         </div>
 
         <div id="fontColorPicker" class="input-group mb-3 col-sm-4 col-xs-4">
